@@ -30,9 +30,9 @@
 %token TK_LPAREN TK_RPAREN
 %token TK_SHOW TK_LOAD TK_PUSH SIZE TK_POP;
 %token TK_NEWLINE
-%left TK_PLUS TK_MINUS 
-%left TK_MULTIPLY TK_DIVIDE TK_MOD
-%left TK_AND TK_OR TK_NOT
+%left  TK_PLUS TK_MINUS 
+%left  TK_MULTIPLY TK_DIVIDE TK_MOD
+%left  TK_AND TK_OR TK_NOT
 %token TK_END
 
 %precedence NEG   /* negation--unary minus */
@@ -87,7 +87,7 @@ srcreg: /* returns values of register and variable */
 ;
 
 dstreg: /* returns register index */
-  REG         { $$ = $1; }
+  REG         { if($1 == 26) { yyerror("CANNOT WRITE TO ACC"); YYERROR; } else { $$ = $1; } }
 | TOP         { yyerror("$top IS READONLY!"); YYERROR; }
 | SIZE        { yyerror("$size IS NOT A REGISTER!"); YYERROR; }
 ;
