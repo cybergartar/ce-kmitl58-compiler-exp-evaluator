@@ -1,0 +1,6 @@
+56 AND 60
+PUSH $acc
+SHOW $top
+POP $rA
+LOAD $rB $size
+END

@@ -1,0 +1,7 @@
+5*10/-10
+PUSH $acc
+$acc-(10+5)
+SHOW $acc
+POP $rA
+SHOW $rA
+END

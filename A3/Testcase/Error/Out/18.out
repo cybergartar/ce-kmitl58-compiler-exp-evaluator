@@ -1,3 +1,3 @@
-= 14
-! ERROR: USE "SHOW $size"
+= 56
+= 56
 ! ERROR: $size IS NOT A REGISTER!

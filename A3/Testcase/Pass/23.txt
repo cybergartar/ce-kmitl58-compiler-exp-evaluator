@@ -1,0 +1,6 @@
+8+8*10/4
+PUSH $acc
+POP $rA
+$rA+$acc
+SHOW $acc
+END

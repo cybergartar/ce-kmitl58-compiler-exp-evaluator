@@ -1,0 +1,6 @@
+10/9
+(5 AND 10) OR 8
+NOT 10
+PUSH $acc
+POP $rB
+END

@@ -1,0 +1,6 @@
+5/10*9
+SHOW $acc
+PUSH $acc
+POP $rA
+POP $rB
+END

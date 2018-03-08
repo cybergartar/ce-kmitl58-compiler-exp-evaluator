@@ -1,0 +1,7 @@
+SHOW $acc
+SHOW $top
+SHOW $size
+POP $rA
+POP $rB
+5+5+10
+END

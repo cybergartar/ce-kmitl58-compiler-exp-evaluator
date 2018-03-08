@@ -1,0 +1,7 @@
+NOT 150
+$acc+40
+SHOW $acc
+PUSH $acc
+POP $rM
+$rM*$acc
+END

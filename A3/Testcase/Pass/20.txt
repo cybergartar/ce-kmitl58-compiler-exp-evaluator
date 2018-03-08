@@ -1,0 +1,8 @@
+10\5
+NOT $acc
+PUSH $acc
+100 AND 9
+POP $rB
+SHOW $rB
+SHOW $acc
+END

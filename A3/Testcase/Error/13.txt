@@ -1,0 +1,5 @@
+SHOW $acc
+SHOW $rB
+5+5+10/5
+POP $rA
+END

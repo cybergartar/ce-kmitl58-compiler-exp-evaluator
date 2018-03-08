@@ -1,0 +1,7 @@
+10 OR 0
+$acc + 5
+SHOW $acc
+PUSH $acc
+POP $rC
+SHOW $rC
+END 

@@ -1,0 +1,6 @@
+NOT (10 AND 100)
+$acc+100
+PUSH $acc
+$top+58
+SHOW $size
+END 

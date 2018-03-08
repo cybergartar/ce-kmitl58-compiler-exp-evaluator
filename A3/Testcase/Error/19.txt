@@ -1,0 +1,5 @@
+7+975464+9-10000
+SHOW $acc
+SHOW $size
+SHOW $top
+END

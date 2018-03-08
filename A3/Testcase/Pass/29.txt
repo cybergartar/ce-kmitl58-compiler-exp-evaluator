@@ -1,0 +1,7 @@
+(5/5+1--5)
+LOAD $acc $rA
+PUSH $rA
+POP $rB
+5+5
+$acc+$rB
+END

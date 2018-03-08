@@ -1,0 +1,6 @@
+5+8*88/5
+SHOW $acc
+POP $rZ
+SHOW $rZ
+SHOW $top
+END

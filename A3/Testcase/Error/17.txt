@@ -1,0 +1,6 @@
+SHOW $size
+5+5+6*10
+SHOW $top
+SHOW $acc
+POP $rA
+END

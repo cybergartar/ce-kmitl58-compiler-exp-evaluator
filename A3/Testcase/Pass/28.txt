@@ -1,0 +1,7 @@
+(10 OR 15 AND 20)
+SHOW $acc
+$acc+40
+PUSH $acc
+POP $rA
+SHOW $rA
+END

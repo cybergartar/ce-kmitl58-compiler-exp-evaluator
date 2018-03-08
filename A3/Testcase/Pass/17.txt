@@ -1,0 +1,6 @@
+100+600
+((5+10)AND(NOT 100))
+PUSH $acc
+POP $rA
+10 OR $rA
+END
