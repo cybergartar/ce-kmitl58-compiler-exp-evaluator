@@ -42,19 +42,19 @@
 %% /* The grammar follows.  */
 
 input:
-| input line
+| input line                     
 ;
 
 line:
   TK_NEWLINE
-| exp TK_NEWLINE         { printf ("= %d\n", $1); }
-| REG                    { yyerror("USE \"SHOW $r[A-Z]\""); }
-| TOP                    { yyerror("USE \"SHOW $top\""); }
-| SIZE                   { yyerror("USE \"SHOW $size\""); }
-| TK_SHOW show           { printf("= %d\n", $2); }
-| TK_LOAD srcreg dstreg  { setRegVal($3, $2); }
-| TK_PUSH srcreg         { push($2); }
-| TK_POP dstreg          { if(getStackSize() != 0) {setRegVal($2, getTop()); pop(); } else { yyerror("STACK EMPTY"); } }
+| exp TK_NEWLINE                   { printf ("= %d\n", $1); }
+| REG TK_NEWLINE                   { yyerror("USE \"SHOW $r[A-Z]\""); }
+| TOP TK_NEWLINE                   { yyerror("USE \"SHOW $top\""); }
+| SIZE TK_NEWLINE                  { yyerror("USE \"SHOW $size\""); }
+| TK_SHOW show TK_NEWLINE          { printf("= %d\n", $2); }
+| TK_LOAD srcreg dstreg TK_NEWLINE { setRegVal($3, $2); }
+| TK_PUSH srcreg TK_NEWLINE        { push($2); }
+| TK_POP dstreg TK_NEWLINE         { if(getStackSize() != 0) {setRegVal($2, getTop()); pop(); } else { yyerror("STACK EMPTY"); } }
 ;
 
 exp:

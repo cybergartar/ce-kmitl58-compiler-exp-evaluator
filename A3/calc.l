@@ -10,15 +10,14 @@ L     [A-Z]
   #include <ctype.h>
   #include <string.h>
   int strToHex(char* s);
-  int getRegIndex(char* s);
 %}
 
 %%
 [ \t]             {  }
 [0-9]+            { yylval = atoi(yytext); return (NUM); }
 [0-9a-fA-F]+[hH]  { yylval = strToHex(yytext); return (NUM);}
-"$r"{L}           { yylval = getRegIndex(yytext); return (REG); }
-"$acc"            { yylval = getRegIndex("$r["); return(REG); }
+"$r"{L}           { yylval = yytext[2] - 'A'; return (REG); }
+"$acc"            { yylval = 26; return(REG); }
 \n                { return (TK_NEWLINE); }
 "AND"             { return (TK_AND); }
 "OR"              { return (TK_OR); }
@@ -43,10 +42,6 @@ int strToHex(char* s) {
   int len = strlen(s);
   s[len-1] = 0;
   return (int)( strtol(s, NULL, 16) );
-}
-
-int getRegIndex(char* s) {
-  return (s[2] - 'A');
 }
 
 
