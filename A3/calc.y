@@ -64,7 +64,7 @@ exp:
 | exp TK_PLUS exp          { $$ = $1 + $3; setAcc($$); }
 | exp TK_MINUS exp         { $$ = $1 - $3; setAcc($$); }
 | exp TK_MULTIPLY exp      { $$ = $1 * $3; setAcc($$); }
-| exp TK_DIVIDE exp        { $$ = $1 / $3; setAcc($$); }
+| exp TK_DIVIDE exp        { if($3 == 0) { yyerror("DIVIDE BY ZERO"); YYERROR; } else { $$ = $1 / $3; setAcc($$); } }
 | exp TK_MOD exp           { $$ = $1 % $3; setAcc($$); }
 | exp TK_AND exp           { $$ = $1 & $3; setAcc($$); }
 | exp TK_OR exp            { $$ = $1 | $3; setAcc($$); }
