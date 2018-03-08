@@ -1,0 +1,12 @@
+1+12-4\4 *10
+PUSH $acc
+18h/3h
+PUSH $acc
+PUSH $acc
+LOAD $rB $rA
+POP $rA
+$acc + $rA
+POP $rA
+LOAD $rA $rB
+SHOW $acc
+END

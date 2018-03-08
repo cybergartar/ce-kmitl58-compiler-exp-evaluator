@@ -1,0 +1,11 @@
+5
+10h-5
+PUSH $acc
+66/3
+$acc+$top
+SHOW $acc
+SHOW $top
+POP $rA
+POP $rA
+SHOW $top
+END

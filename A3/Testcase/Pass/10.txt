@@ -1,0 +1,12 @@
+11h OR 10h
+PUSH $acc
+11h OR 10h
+PUSH $acc
+NOT $acc
+PUSH $acc
+SHOW $top
+POP $rA
+SHOW $top
+POP $rA
+SHOW $top
+END

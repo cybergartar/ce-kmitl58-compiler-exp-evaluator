@@ -1,0 +1,12 @@
+12h
+PUSH $acc
+PUSH $acc
+PUSH $acc
+PUSH $acc
+PUSH $acc
+SHOW $size
+POP $rA
+POP $rA
+POP $rA
+SHOW $top
+END

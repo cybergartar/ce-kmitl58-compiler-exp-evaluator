@@ -1,0 +1,12 @@
+100/3 + 4 -2 \5
+PUSH $acc
+11h\ 3h
+PUSH $acc
+55h
+PUSH $acc
+POP $rB 
+SHOW $top
+POP $rA
+$rA + $acc
+SHOW $acc
+END

@@ -1,0 +1,12 @@
+5h
+PUSH $acc
+11h
+PUSH $acc
+55h
+PUSH $acc
+POP $rA
+$acc + $rA
+POP $rA
+$rA + $acc
+SHOW $acc
+END

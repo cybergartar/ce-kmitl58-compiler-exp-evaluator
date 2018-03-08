@@ -1,0 +1,11 @@
+-1
+PUSH $acc
+PUSH $acc
+PUSH $acc
+LOAD $acc $size
+SHOW $top
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+END

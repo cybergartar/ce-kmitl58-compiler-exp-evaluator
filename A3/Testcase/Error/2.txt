@@ -1,0 +1,12 @@
+10h -2
+PUSH $acc
+PUSH $acc
+PUSH $acc
+PUSH $acc
+$size
+POP $rA 
+POP $rA
+POP $rA
+POP $rA
+LOAD $rA $size
+END

@@ -1,0 +1,10 @@
+(3+5-6/3)\5
+PUSH $acc
+PUSH $acc
+PUSH $acc
+SHOW $top
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+END

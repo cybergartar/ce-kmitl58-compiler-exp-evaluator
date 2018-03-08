@@ -1,0 +1,12 @@
+555\10
+SHOW $acc
+PUSH $acc
+1234\10h
+PUSH $acc
+POP $rA
+LOAD $rB $rA
+LOAD $rA $rB
+POP $rZ
+POP $rY
+SHOW $top
+END

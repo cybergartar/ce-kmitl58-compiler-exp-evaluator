@@ -1,0 +1,4 @@
+! ERROR: $size IS NOT A REGISTER!
+! ERROR: STACK EMPTY
+= -1
+= 0

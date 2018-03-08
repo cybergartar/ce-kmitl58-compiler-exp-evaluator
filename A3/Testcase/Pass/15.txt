@@ -1,0 +1,19 @@
+(987-876)\5
+PUSH $acc
+(44-555)*4
+$acc+1
+PUSH $acc
+11h+10h
+PUSH $acc
+5/4
+PUSH $acc
+POP $rA
+$acc+$rA
+POP $rA
+$acc+$rA
+POP $rA
+$acc+$rA
+POP $rA
+$rA+$rB
+SHOW $acc
+END

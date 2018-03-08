@@ -1,0 +1,12 @@
+11h - 10
+PUSH $acc
+PUSH $acc
+PUSH $acc
+33\10
+$top - $acc
+POP $rA
+POP $rA
+POP $rA
+$rA + $acc
+SHOW $acc
+END

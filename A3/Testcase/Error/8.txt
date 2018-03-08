@@ -1,0 +1,12 @@
+(-1 *4h ) AND 10h
+PUSH $acc
+LOAD $rA $top
+NOT $acc
+PUSH $acc
+LOAD $acc $size
+SHOW $top
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+END

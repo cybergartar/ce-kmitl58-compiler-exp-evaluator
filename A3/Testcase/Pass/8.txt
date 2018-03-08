@@ -1,0 +1,12 @@
+5555h\5
+PUSH $acc
+11h\11
+PUSH $acc
+POP $rA
+LOAD $rB $rA
+SHOW $top
+$acc + $rA
+POP $rA
+$rA + $acc
+SHOW $acc
+END

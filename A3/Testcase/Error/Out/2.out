@@ -1,0 +1,3 @@
+! ERROR: USE "SHOW $size"
+! ERROR: $size IS NOT A REGISTER!
+= 14

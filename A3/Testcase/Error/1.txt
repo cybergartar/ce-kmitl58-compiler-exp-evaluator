@@ -1,0 +1,11 @@
+10h
+PUSH $acc
+PUSH $acc
+PUSH $acc
+PUSH $acc
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+END

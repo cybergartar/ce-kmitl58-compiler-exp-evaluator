@@ -1,0 +1,12 @@
+10 + 2*4
+PUSH $acc
+$top/ 5
+PUSH $acc
+33\10
+POP $rA
+SHOW $top
+SHOW $acc
+POP $rA
+$rA + $acc
+SHOW $acc
+END

@@ -1,0 +1,18 @@
+1h
+PUSH $acc
+$acc+1
+PUSH $acc
+$acc+1
+PUSH $acc
+$acc+1
+PUSH $acc
+$acc+1
+PUSH $acc
+$acc+1
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+SHOW $size
+SHOW $top
+END

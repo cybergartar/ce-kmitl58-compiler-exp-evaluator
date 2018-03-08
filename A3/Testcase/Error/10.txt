@@ -1,0 +1,10 @@
+10h OR 11h
+PUSH $acc
+PUSH $acc
+PUSH $acc
+SHOW $top
+POP $rA
+POP $rA
+POP $rA
+POP $rA
+END

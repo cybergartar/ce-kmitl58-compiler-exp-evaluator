@@ -1,0 +1,19 @@
+((3h+10 )/5 +6)\8
+PUSH $acc
+444-555
+PUSH $acc
+-1
+PUSH $acc
+PUSH $acc
+PUSH $acc
+PUSH $acc
+POP $rA
+$rA*$acc
+POP $rA
+$rA*$acc
+POP $rA
+$rA*$acc
+POP $rA
+$rA*$acc
+SHOW $acc
+END

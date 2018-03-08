@@ -1,0 +1,13 @@
+1 + 2 
+PUSH $acc
+ 3*2
+PUSH $acc
+9\4
+SHOW $top
+SHOW $acc
+POP $rA
+$rA + $acc
+POP $rA
+$rA + $acc
+SHOW $acc
+END

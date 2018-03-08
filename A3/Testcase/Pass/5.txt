@@ -1,0 +1,12 @@
+11h / 3h
+PUSH $acc
+11h\ 3h
+PUSH $acc
+POP $rA
+LOAD $rB $rA
+SHOW $top
+POP $rA
+$acc * $rA
+$rA + $acc
+SHOW $acc
+END
