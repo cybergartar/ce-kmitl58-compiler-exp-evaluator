@@ -1,4 +1,4 @@
-all: calc
+all: calc clean
 
 calc.tab.c calc.tab.h:	calc.y
 	bison -dv calc.y
@@ -10,4 +10,4 @@ calc: lex.yy.c calc.tab.c calc.tab.h
 	gcc -o calc calc.tab.c lex.yy.c -lm
 
 clean:
-	rm calc calc.tab.c lex.yy.c calc.tab.h
+	rm calc.tab.c lex.yy.c calc.tab.h calc.output
